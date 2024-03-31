@@ -1,0 +1,199 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hi, how can I help you today?
+    - hello! What can I do for you?
+    - hey there! What brings you here?
+    - good morning! How are you doing?
+    - hello, nice to see you!
+    - hey! What's up?
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - farewell
+    - take care
+    - see you soon
+    - until next time
+    - goodbye, have a great day
+    - bye, it was nice talking to you
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - absolutely
+    - definitely
+    - sure thing
+    - without a doubt
+    - affirmative
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - not at all
+    - definitely not
+    - I disagree
+    - I'm afraid not
+    - nah
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - fantastic
+    - splendid
+    - awesome
+    - terrific
+    - fabulous
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
+    - terrible
+    - awful
+    - dreadful
+    - miserable
+    - downcast
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - prove you are not a bot
+    - I suspect you're a bot
+    - you seem like a bot
+    - human or machine?
+    - can you pass the Turing test?
+    - are you real?
+
+- intent: ask_weather
+  examples: |
+    - what's the weather like today?
+    - can you tell me the weather forecast?
+    - is it going to rain tomorrow?
+    - how's the weather looking?
+    - will it be sunny this weekend?
+    - do I need an umbrella today?
+    - what's the temperature outside?
+    - any chance of snow tomorrow?
+    - will there be a storm later?
+
+- intent: ask_time
+  examples: |
+    - what time is it?
+    - can you tell me the time?
+    - do you have the current time?
+    - what's the time right now?
+    - could you give me the time, please?
+    - do you know what time it is?
+    - what hour is it?
+    - what's the current time?
+
+- intent: joke
+  examples: |
+    - tell me a joke
+    - do you know any jokes?
+    - I could use a laugh, tell me something funny
+    - make me laugh
+    - can you share a joke?
+    - entertain me with a joke
+
+- intent: thank
+  examples: |
+    - thank you
+    - thanks
+    - appreciate it
+    - thanks a lot
+    - thank you so much
+    - thanks for your help
+    - I'm grateful
+    - I appreciate your assistance
+    - thanks, that's helpful
+    - thank you very much
+    - I owe you one
+    - thanks a bunch
+    - thank you, you're a lifesaver
+
+- intent: ask_name
+  examples: |
+    - what's your name?
+    - can I know your name?
+    - what should I call you?
+    - do you have a name?
+    - tell me your name
+    - what do people call you?
+
+- intent: ask_help
+  examples: |
+    - I need help
+    - can you assist me?
+    - help me out
+    - I'm stuck, could you help?
+    - can you lend me a hand?
+    - I'm confused, can you help?
+    - I don't understand, can you explain?
+    - can you give me some guidance?
+    - could you offer some assistance?
+    - I'm lost, could you point me in the right direction?

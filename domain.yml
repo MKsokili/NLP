@@ -1,0 +1,85 @@
+version: "3.1"
+
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- ask_weather
+- ask_time
+- joke
+- thank
+- ask_name
+- ask_help
+
+responses:
+  utter_greet:
+  - text: "Hello! How can I assist you today?"
+  - text: "Hey there! How may I help you?"
+  - text: "Hi! What can I do for you?"
+  - text: "Good to see you! How can I assist you?"
+
+  utter_goodbye:
+  - text: "Goodbye! Have a great day."
+  - text: "Bye! Take care."
+  - text: "See you later!"
+
+  utter_affirm:
+  - text: "Great to hear!"
+  - text: "Fantastic!"
+
+  utter_deny:
+  - text: "Okay, no problem."
+  - text: "Understood."
+
+  utter_mood_great:
+  - text: "That's wonderful!"
+  - text: "I'm happy to hear that."
+
+  utter_mood_unhappy:
+  - text: "I'm sorry to hear that. Is there anything I can do to help?"
+  - text: "I hope things get better soon."
+
+  utter_bot_challenge:
+  - text: "I'm a bot designed to assist you. How can I help you today?"
+
+  utter_ask_weather:
+  - text: "Sure, let me check the weather for you."
+
+  utter_ask_time:
+  - text: "One moment, let me check the current time."
+
+  utter_joke:
+  - text: "Why don't scientists trust atoms? Because they make up everything!"
+
+  utter_thank:
+  - text: "You're welcome!"
+  - text: "Glad I could help!"
+
+  utter_ask_name:
+  - text: "I am a bot designed to assist you. You can call me ChatBot!"
+
+  utter_ask_help:
+  - text: "Sure! What do you need assistance with?"
+  
+  utter_iamabot:
+  - text: "I am a bot designed to assist you."
+
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_ask_name
+- utter_ask_help
+- utter_thank
+- action_provide_weather
+- action_tell_joke
+- utter_iamabot
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
