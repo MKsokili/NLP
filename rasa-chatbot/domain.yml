@@ -1,0 +1,70 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thanks
+  - inform
+  - ask_weather
+  - book_flight
+  - cancel_booking
+
+responses:
+
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+
+  utter_greet:
+    - text: "Bonjour ! Comment puis-je vous aider aujourd'hui ?"
+
+  utter_goodbye:
+    - text: "Au revoir ! À bientôt."
+
+  utter_thanks:
+    - text: "De rien ! N'hésitez pas à me demander si vous avez besoin d'aide supplémentaire."
+
+  utter_inform:
+    - text: "Voici les informations que vous avez demandées."
+
+actions:
+  - utter_default
+  - utter_greet
+  - utter_goodbye
+  - utter_thanks
+  - utter_inform
+  - action_get_weather
+  - action_book_flight
+  - action_cancel_booking
+
+entities:
+  - date
+  - location
+  - flight_class
+
+templates:
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

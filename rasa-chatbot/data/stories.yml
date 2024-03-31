@@ -1,0 +1,65 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Handle greetings
+  steps:
+      - intent: greet
+      - action: utter_greet
+
+- story: Handle goodbyes
+  steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+- story: Handle thanks
+  steps:
+      - intent: thanks
+      - action: utter_thanks
+
+- story: Handle information requests
+  steps:
+      - intent: inform
+      - action: utter_inform
+
+- story: Handle weather inquiries
+  steps:
+      - intent: ask_weather
+      - action: action_get_weather
+
+- story: Handle flight bookings
+  steps:
+      - intent: book_flight
+      - action: action_book_flight
+
+- story: Handle booking cancellations
+  steps:
+      - intent: cancel_booking
+      - action: action_cancel_booking

@@ -1,0 +1,147 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: greet
+  examples: |
+    - Bonjour !
+    - Salut !
+    - Hello !
+    - Coucou !
+    - Hey !
+    - Bonsoir !
+
+- intent: goodbye
+  examples: |
+    - Au revoir !
+    - Adieu !
+    - Bye !
+    - À plus tard !
+    - À la prochaine !
+
+- intent: thanks
+  examples: |
+    - Merci !
+    - Merci beaucoup !
+    - Merci bien !
+    - Je te remercie !
+    - C'est gentil !
+
+- intent: inform
+  examples: |
+    - Je veux des informations sur [sujet]
+    - Peux-tu me donner des détails sur [sujet]
+    - Pourrais-tu m'informer sur [sujet]
+    - J'aimerais savoir plus sur [sujet]
+    - Donne-moi des informations sur [sujet]
+
+- intent: ask_weather
+  examples: |
+    - Quel temps fait-il à [location] ?
+    - Comment est la météo à [location] aujourd'hui ?
+    - Peux-tu me dire la météo à [location] ?
+    - Est-ce qu'il pleut à [location] demain ?
+    - Donne-moi la prévision météo à [location] pour la semaine prochaine.
+
+- intent: book_flight
+  examples: |
+    - Je veux réserver un vol pour [destination] le [date] en [flight_class] classe.
+    - Réserve-moi un billet d'avion pour [destination] le [date] en [flight_class] classe.
+    - Je voudrais un vol pour [destination] le [date] en [flight_class] classe.
+    - J'aimerais partir pour [destination] le [date] en [flight_class] classe.
+
+- intent: cancel_booking
+  examples: |
+    - J'aimerais annuler ma réservation pour [destination] le [date].
+    - Annule ma réservation pour [destination] le [date].
+    - Je ne peux plus voyager, s'il te plaît annule ma réservation pour [destination] le [date].
+    - Je veux annuler mon vol pour [destination] le [date].
+

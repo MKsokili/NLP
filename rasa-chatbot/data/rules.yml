@@ -1,0 +1,57 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Handle utterance with highest confidence intent
+  steps:
+      - intent: '*'
+      - action: utter_default
+
+- rule: Fallback rule
+  steps:
+      - action: utter_default
+
+- rule: Handle goodbye
+  steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+- rule: Handle thanks
+  steps:
+      - intent: thanks
+      - action: utter_thanks
+
+- rule: Handle greet
+  steps:
+      - intent: greet
+      - action: utter_greet
+
+- rule: Handle inform
+  steps:
+      - intent: inform
+      - action: utter_inform
+
+- rule: Handle ask_weather
+  steps:
+      - intent: ask_weather
+      - action: action_get_weather
+
+- rule: Handle book_flight
+  steps:
+      - intent: book_flight
+      - action: action_book_flight
+
+- rule: Handle cancel_booking
+  steps:
+      - intent: cancel_booking
+      - action: action_cancel_booking
